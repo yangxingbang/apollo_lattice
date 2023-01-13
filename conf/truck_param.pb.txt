@@ -1,0 +1,27 @@
+tractor_param {
+  front_overhang: 1.50
+  rear_overhang: 0.81
+  front_edge_to_center: 3.755
+  back_edge_to_center: 3.755
+  left_edge_to_center: 1.275
+  right_edge_to_center: 1.275
+  length: 7.51
+  width: 2.55
+  height: 3.35
+  min_turn_radius: 9.5
+  max_acceleration: 2.0
+  max_deceleration: -5.0
+  max_steer_angle: 0.468
+  max_steer_angle_rate: 0.523
+  steer_ratio: 1
+  wheel_base: 4.5
+}
+trailer_param {
+  head_base_to_hinge: -0.3
+  front_overhang: 0.87
+  rear_overhang: 3.4
+  length: 14.0
+  width: 2.53
+  height: 4.0
+  wheel_base: 9.73
+}

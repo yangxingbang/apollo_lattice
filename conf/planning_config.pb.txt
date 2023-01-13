@@ -1,0 +1,6 @@
+standard_planning_config {
+  planner_type: LATTICE
+  planner_lattice_config{
+    
+  }
+}

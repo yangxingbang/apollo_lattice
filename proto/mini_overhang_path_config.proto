@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+package apollo.planning;
+
+message MiniOverhangPathConfig {
+  optional MiniOverhangPathWeights default_path_config = 1;
+  optional MiniOverhangPathWeights lane_change_path_config = 2;
+}
+message MiniOverhangPathWeights {
+  optional double l_weight = 1 [default = 1.0];
+  optional double phi_weight = 2 [default = 1.0];
+  optional double lambda_weight = 3 [default = 1.0];
+  optional double kappa_weight = 4 [default = 1.0];
+  optional double dkappa_weight = 5 [default = 1.0];
+  optional double l_trailer_weight = 6 [default = 1.0];
+  optional double slack_wheelbase_tractor_weight = 7 [default = 1.0];
+  optional double slack_front_overhang_tractor_weight = 8 [default = 1.0];
+  optional double slack_rear_overhang_tractor_weight = 9 [default = 1.0];
+  optional double slack_wheelbase_trailer_weight = 10 [default = 1.0];
+  optional double slack_rear_overhang_trailer_weight = 11 [default = 1.0];
+}
